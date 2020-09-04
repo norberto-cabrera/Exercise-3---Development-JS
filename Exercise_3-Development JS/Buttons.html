@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myDIV {
+          width: 100%;
+          padding: 50px 0;
+          text-align: center;
+          background-color: lightblue;
+          margin-top: 20px;
+          display: none
+        }
+.btn {
+   background:#5DADE2;
+   width: 50%;
+}        
+
+.hover{
+   background:#F4D03F;
+   width: 100%;        
+}
+</style>
+</head>
+<body>
+
+<h1>Exercise 3 - Development JS</h1>
+
+<div id="menu">
+<button id = "button1" onclick="f1()">Click</button>
+<button id = "button2" onclick="f2()">Click</button>
+<button class = "btn" id = "b" onmouseover="f3()">Click</button>
+</div>
+
+<div id="myDIV">
+This is my DIV element.
+</div>
+
+<script>
+  function f1(){
+   alert("You clicked button 1");
+  };
+  
+  
+  function f2(){
+   var x = document.getElementById('myDIV');
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display = 'none';
+  }
+ }
+ 
+ function f3(){
+   document.getElementById('b').className = "hover";
+  };
+  
+</script>
+
+
+</body>
+</html>
